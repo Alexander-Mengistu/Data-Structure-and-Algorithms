@@ -1,0 +1,11 @@
+
+
+Data Structure and Algorithms play big rule in data managment and software efficients utilsing the wrong data structure or the algorithm can make or break your software performance
+however they is way to measure scalalbility and efficience of algirhtm by providing an apprixmation of how the algirhtms time or space reurments to grow relative to the size of the input,
+thats where Big O, Big Omega, Big Theta, this mathmathical formulas can be used to predicate the behaviours and performance of the data structure / algorithms 
+
+Big O = is usually used to predicate worst case cenario for the performance and scalability of the algorithm
+1. Good for measuring worst and average case time complixity: O(n*n). worst case occures when array is reverse sorted. example (34,32,55) reverser (55,32,34)
+2. Best case Scanario occures when the data is already sorted.
+3.Auxiliary space: O(1) because it only stores one temp value for comparison.
+

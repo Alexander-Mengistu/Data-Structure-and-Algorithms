@@ -1,3 +1,4 @@
+//append function
 //This alogirhm code create a custom function, append, basically lets you add new elements to the end array without using build-in function of javascript such as push array methods
 
 //1. Create a function
@@ -27,4 +28,3 @@ function append(array,value) { //array is the origional array, value is the elem
     // }
 
     console.log(scores)
-    //

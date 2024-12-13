@@ -1,0 +1,22 @@
+They is many types of data structures to show from, in this file i will be listing advtanges and dissatavtanges
+
+1. Linear Data structures
+Pros: Insertation and Deletion: can delete elements from array utilising index, without having to left shift and right shift when data delete such as dynamic data
+Cons: Memory waste: if the array is larger or smaller than necessary, it may lead to waste memory
+Cons: Will need to know the size of the array.
+
+
+2.Stack Data Structure 
+
+
+3.Queue Data Structure
+
+
+4.Linked List Data Structure
+
+
+5.Graph data Structure
+
+
+
+Linear and Non-Linear data structure? Benefits and Drawbacks?

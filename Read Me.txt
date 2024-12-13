@@ -1,0 +1,24 @@
+
+
+Order should be read
+1. Linear Table Append
+2. Linear Table Insert
+3. Linear Table Delete
+4. Bubble Sort
+5. InsertSort
+6. Binary Search
+7. Binary Search
+
+
+
+Hi Alex will continue working from  Single-Link
+// Im speed running data structure and algorithms need retain Single Link a bit more
+
+
+
+
+Non Order Read
+Time Complixity
+Pros And Cons Of Data Structure
+Advanteges 
+
