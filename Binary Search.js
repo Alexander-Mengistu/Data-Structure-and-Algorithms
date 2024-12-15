@@ -1,7 +1,9 @@
 //Binary Search is more efficient than Linear table as doesnt have to search from the start of the array but split array into two halfs and check if the number is above or bellow, rememeber binary search doesnt work if the data is not sorted first
-//1. Binary Search utilises 3 variables, min, med, max
+//1. Binary Search utilises 3 variables, min = index = 0, med = min and max divide by 2, max = array.length -1
 //2. Binary Search utilises while loop to constinosuly search
 //3. Binary search has if else statement if the conditon becomes true and exit the code and return a value
+//Binary search runs 1 step at a time, starts from middle first
+//It works by repeatedly dividing in half the portion of the list that could contain the item, until you've narrowed down the possible locations to just one.
 
 class BinarySearch {
     static search(arrays, searchValue) {
