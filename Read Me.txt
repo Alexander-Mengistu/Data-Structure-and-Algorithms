@@ -7,7 +7,16 @@ Order should be read
 4. Bubble Sort
 5. InsertSort
 6. Binary Search
-7. Binary Search
+7. Single Link 1 Example 
+8. Single Link 2 Intilize 
+9. Single Link 3 Insert
+10. Single Link traverse 1
+11. Single Link search 2
+12. Single Insert at the beginning head 3
+13. Single Link insert at the end 4
+14. Single Link at specific location 5
+15. Sinlge Link Deletion 6
+
 
 
 
