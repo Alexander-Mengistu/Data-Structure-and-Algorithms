@@ -26,7 +26,7 @@ function insertPos(head, pos, data) {
         prev = prev.next;
         count++;
     }
-
+ 
     // If position is greater than the number of nodes
     if (prev === null) {
         console.log("Invalid position!");

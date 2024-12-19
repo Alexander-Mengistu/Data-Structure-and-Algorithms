@@ -7,6 +7,7 @@ Order should be read
 4. Bubble Sort
 5. InsertSort
 6. Binary Search
+
 7. Single Link 1 Example 
 8. Single Link 2 Intilize 
 9. Single Link 3 Insert
@@ -16,6 +17,15 @@ Order should be read
 13. Single Link insert at the end 4
 14. Single Link at specific location 5
 15. Sinlge Link Deletion 6
+
+16. Double Linked List example 1
+17. Double Linked list intilizing 2
+18. Double Linked list traversal 3
+19. Double Linked list find the length of list 4
+20. Double Linked list insert at the beginning 5
+21. Double Linked list insert at the ending
+22. Double Linked list insert at specific location
+
 
 
 
