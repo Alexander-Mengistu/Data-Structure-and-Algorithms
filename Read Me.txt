@@ -19,12 +19,15 @@ Order should be read
 15. Sinlge Link Deletion 6
 
 16. Double Linked List example 1
-17. Double Linked list intilizing 2
-18. Double Linked list traversal 3
-19. Double Linked list find the length of list 4
-20. Double Linked list insert at the beginning 5
-21. Double Linked list insert at the ending
-22. Double Linked list insert at specific location
+17. Double Linked List intilizing 2
+18. Double Linked List traversal 3
+19. Double Linked List find the length of List 4
+20. Double Linked List insert at the beginning 5
+21. Double Linked List insert at the ending 6
+22. Double Linked List insert at specific location 7
+23. Double Linked List delete from beginning 8
+24. Double Linked List delete from the end 9
+25. Double Linked List delete from specific location 10
 
 
 

@@ -1,0 +1,6 @@
+
+Pros are you can utilize two pointers for data strucutre example can have next and previous structure example web browser storing browser history letting you travel to previous pages or return to your current pages
+Efficient data structure, and quick
+
+Cons Double link can cause bottle neck on memory as will next to hold 2 times the length of signle link
+for most people Double Link can be to complex to manage
