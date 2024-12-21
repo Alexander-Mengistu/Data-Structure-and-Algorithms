@@ -1,0 +1,14 @@
+One-way circular linkedlist is a data structure that uses nodes similiar to Linked List but the the last node loops back to the first node, similiar to feedback loop, this data structure is commonly used for loop playlists 
+One-way circular Linked List alows for continous traversal without interruptions. other use case is scheduling and managing playlists.
+One-way circular linked list behavious majorltly like single list, big difference is last node connects back to the beggining
+
+/* Operation
+Insertion 
+    insertion at the empty list
+    insertation at the beginning 
+    insertion at the endinsertion at the given position
+Deletion 
+    Delete the first node 
+    Delete the last node
+    Delete the node from any position
+Searching

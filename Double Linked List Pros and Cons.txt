@@ -3,4 +3,4 @@ Pros are you can utilize two pointers for data strucutre example can have next a
 Efficient data structure, and quick
 
 Cons Double link can cause bottle neck on memory as will next to hold 2 times the length of signle link
-for most people Double Link can be to complex to manage
+for most people Double Link can be to complex to manage. 

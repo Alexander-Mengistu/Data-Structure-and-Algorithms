@@ -30,6 +30,10 @@ Order should be read
 25. Double Linked List delete from specific location 10
 
 
+26. One-way Circular LinkedList
+27. One-way Circular LinkedList 
+
+
 
 
 
