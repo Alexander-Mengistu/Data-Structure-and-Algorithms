@@ -29,7 +29,6 @@ Order should be read
 24. Double Linked List delete from the end 9
 25. Double Linked List delete from specific location 10
 
-
 26. One-way Circular LinkedList
 27. One-way Circular LinkedList 
 
