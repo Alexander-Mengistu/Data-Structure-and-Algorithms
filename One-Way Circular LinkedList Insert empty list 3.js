@@ -6,12 +6,12 @@
 /*
 To insert a new node at the beginning of a circular linked list, follow these steps:
 
-Create a new node: Allocate memory for the new node and initialize its data.
-Check if the list is empty:
-If the list is empty (indicated by last being NULL), set the new node’s next pointer to point to itself, and make the last pointer point to the new node.
-If the list is not empty:
-Set the new node's next pointer to point to the current head of the list (last->next).
-Update the last node's next pointer to point to the new node, ensuring the circular structure is maintained.
+1. Create a new node: Allocate memory for the new node and initialize its data.
+2. Check if the list is empty:
+3. If the list is empty (indicated by last being NULL), set the new node’s next pointer to point to itself, and make the last pointer point to the new node.
+4. If the list is not empty:
+5. Set the new node's next pointer to point to the current head of the list (last->next).
+6. Update the last node's next pointer to point to the new node, ensuring the circular structure is maintained.
 */
 
 class Node {
