@@ -1,0 +1,16 @@
+// Circular Double Linked List
+/* Circular Double Linked is build of nodes each node has two opperation a "Next" and "Prev", the head node has a Prev opperation 
+which will take you to the last node, and tail node has a next opperation which will take you to the beginning head node */
+
+//Benefits
+// 1. enables efficient insertion and deletion of nodes at both ends or in the middle without needing to traverse the entire List
+// 2. Maintains O(1) time complexity for insertions and deletions, making it sutiable for real-time applications
+// 3. Eliminates null pointers for the next and previous nodes, reducing the chance of errors related to null refernces
+// 4. Naturally supports circular or reptitive tasks due to its circular structure.
+
+//Limitations
+// 1. Requires extra memory for storing two pointers (next and previous ) for each node
+// 2. More complext to implement and manage compare to singly linked list or simple arrays
+// 3. Circular nature can make debuggin and trouble shoting more Challenging, as errors can proagate indefinitely.
+// 4. lacks a clear end or tail node, which can complicate operations that need to identify the end of the list
+// 5. sligh performance overhead due to the need to maintain two pointers and ensure the circular links are correctly update
