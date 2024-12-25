@@ -8,9 +8,9 @@ Order should be read
 5. InsertSort
 6. Binary Search
 
-7. Single Link 1 Example 
-8. Single Link 2 Intilize 
-9. Single Link 3 Insert
+7.  Single Link 1 Example 
+8.  Single Link 2 Intilize 
+9.  Single Link 3 Insert
 10. Single Link traverse 1
 11. Single Link search 2
 12. Single Insert at the beginning head 3

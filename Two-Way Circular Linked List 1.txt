@@ -2,7 +2,15 @@
 /* Circular Double Linked is build of nodes each node has two opperation a "Next" and "Prev", the head node has a Prev opperation 
 which will take you to the last node, and tail node has a next opperation which will take you to the beginning head node */
 
+/* Keep in mind that in Circular Double Linked List, The last node doesnt have a indicator showing that the next node is null because its circular
+you would think this makes it diffcult but not true, last node has a indicator to tail reference letting you know its before the head node,
+and they is also a indicator for the first node refernce thats it the head node. since we have refernce to tail node we dont have to traverse through the whole list. This process wouldve taken O(n)
+btw refernce has a indicator to head and tail node
+Learn More = https://www.youtube.com/watch?v=gztwNv4o_9E&list=LL&index=1
+*/
+
 //Benefits
+// 0. Since we have a pointer for head and tail node we dont have to traverse the whole list
 // 1. enables efficient insertion and deletion of nodes at both ends or in the middle without needing to traverse the entire List
 // 2. Maintains O(1) time complexity for insertions and deletions, making it sutiable for real-time applications
 // 3. Eliminates null pointers for the next and previous nodes, reducing the chance of errors related to null refernces
