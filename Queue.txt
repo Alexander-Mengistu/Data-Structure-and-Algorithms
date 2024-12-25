@@ -1,0 +1,12 @@
+/* Queue: a Queue is a lingear structure which follows a particular Order 
+in which the operations are performed. The order is First In First Out (FIFO)
+*/
+
+Learning Doc Javascript Data structure And algorithms
+Learning Doc https://www.w3schools.com/dsa/dsa_data_queues.php
+
+/* Queue is commonly used for scheduling taks, incoming calls, email listing
+a queue is a waiting line or lineup of taks, requests, or interactions that are pending
+processing or handling, commonly used in contact centers
+*/
+
