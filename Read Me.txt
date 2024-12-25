@@ -36,8 +36,13 @@ Order should be read
 30. One-way Circular LinkedList Insert at the end 5.js
 31. One-way Circular LinkeList insert at  beginning 7.js
 32. One-way Circular LinkedList insert at specific location 8.js
-33. One-way Ciruclar LinkeList delete at the end of circular linked list 9.js
+33. One-way Ciruclar LinkeList delete at the end of circular Linked List 9.js
 34. One-way Circulr LinkedList Search Through List 10.js
+
+35. Two-Way Circular Linked List 1.txt
+36. Two-Way Circular Insertion Beginning 2.js
+37. Two-Way Circular Insertion at the end 3.js
+38. Two-Way Circular Insertion at given position 4.js
 
 //Im Currently taking break from Double Circular Linked list
 
