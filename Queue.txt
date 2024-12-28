@@ -54,4 +54,89 @@ queue can be implemented using follwoing data structures:
 - Arrays 
 - Linked Lists
 
+Operation
+Enqueue: Time Complexity: 0(1)
+Enqueue: Space Complexity: 0(1)
+Dequeue: Time Complexity: 0(1)
+Dequeue: Space Complexity: 0(1)
+Front: Time Complexity: 0(1)
+Front: Space Complexity: 0(1)
+Size: Time Complexity: 0(1)
+Size: Space Complexity: 0(1)
+isEmpty: Time Complexity: 0(1)
+isEmpty: Space Complexity: 0(1)
+isFull: Time Complexity: 0(1)
+isFull: Space Complexity: 0(1)
 
+Types of Queues 
+queue data structure can be classified into 4 types:
+
+1. Simple Queue: Simple Queue simply follows FIFO strucutre. we can only 
+insert the element at the back and remove the lement from the front of the queue
+
+2. Double-Ended Queue (Deque): in a double-ended queue the insertion and deletion
+operations, both can be performed from both ends. They are of two types:
+
+    - Input Restricted Queue: This is a simple queue. In this type of queue, the input can be taken
+    from only one end but deletion can be done from any of the ends
+
+    - Output Restricted Queue: This is also a simple queue. In this type of queue,
+    the input can be taken from both ends but deltion can be done from only one end.
+
+3. Circular Queue: This is a special type of queue where the last position is connected back to the first position. here also the operations 
+are performed in FIFO order.
+
+4. Priority Queue: A Priority queue is a special queue where the elements are accessed
+based on the priority assigned to them. They are of two types
+
+    - Ascending Priority Queue: in Ascending Priority Queue, the elements are arranged in increasing order of their priority values. Element 
+    with smallest priority value is popped first
+
+    - Descending Priority Queue: in Descending Priority Queue, the elements are arranged in decreasing order of their priority values. Element with 
+    largest priority is popped first.
+
+ Types of Queue 
+    - Simple Queue 
+    - Double Ended Queue = Input Restricted + Output Restricted Queue
+    - Circular Queue
+    - Priority Queue - Ascending Priority Queue + Descending Priority Queue
+
+Types of Queue more detail
+
+    - Double Ended Deque
+        - Deque or Double Ended Queue is generalized version of Queue data strucutre that allows insert and delete at both ends
+        Operation Lists
+        push_front() = inserts the element at the beginning
+        push_back() = adds element at the end
+        pop_front() = Removes the first element from the deque
+        pop_back() = Removes the last element from the deque
+        front() = gets the front element from the deque
+        back() = gets the last element from the deque
+        empty() = checks whether the deque is empty or not
+        size() = determines the number of elements in the deque
+
+    other Operation not as import
+    clear() = remove all the element from the deque. it leaves the deque with a size of 0
+    erase() = remove one or more element from the deque. it takes an iterator specifying the position of the first element to be removed
+        and an optional second iterator specifiying the position of the last element to be removed.
+    swap() = swap the contents of one deque with another deque
+    emplace_front() = insert a new element at the front of deque. it is similiar to the insert operation,
+        but it avoids the copy constructor of the element being insert.
+    emplace_back() = insert a new element at the back of the deque. it is similiar to the insert operation, but it avoids the copy
+        constructor of the element being insert
+    resize() = change the number of elements in the deque to a specific number, if the new size is larger than the current size, new elements are appended to the deque.
+        if the new size is smaller than the current size, elements are removed from the deque.
+    assign() = assign new values to the element in the deque. it replaces the current contents of the deque with new elements
+    reverse() = reverse the order of the element in the deque
+    sort() = sort the element in the deque in ascending order. it uses the less than operator to compare the elements
+
+    Applications of Deque: Since Deque supports both stack and queue operations, it can be used as both. The Deque data structure 
+    supports clockwise and anticlockwise rotations in O(1) time which can be useful in certain applications. Also, the problems where elements need to be removed and or added to both ends can be efficiently solved using Deque. 
+    
+
+    use case = 
+    Task scheduler: Deques can be used to implement a task scheduler that keeps track of tasks to be executed. Tasks can be added to the back of the deque, and the scheduler can remove tasks from the front of the deque and execute them.
+    
+    Multi-level undo/redo functionality: Deques can be used to implement undo and redo functionality in applications. Each time a user performs an action, the current state of the application is pushed onto the deque. When the user undoes 
+        an action, the front of the deque is popped, and the previous state is restored. When the user redoes an action, the next state is popped from the deque.
+    
