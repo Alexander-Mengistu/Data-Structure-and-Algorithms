@@ -5,8 +5,10 @@ in which the operations are performed. The order is First In First Out (FIFO)
 Learning Doc Javascript Data structure And algorithms
 Learning Doc https://www.w3schools.com/dsa/dsa_data_queues.php
 
-/* Queue is commonly used for scheduling taks, incoming calls, email listing
+/* Queue is commonly used for scheduling taks, incoming calls, email listing, printer, buffer cpu and keyboard Cpu Scheduling
+Cashier line in stores, Disk Scheduling, Serving request
 a queue is a waiting line or lineup of taks, requests, or interactions that are pending
+
 processing or handling, commonly used in contact centers
 */
 
@@ -103,7 +105,7 @@ based on the priority assigned to them. They are of two types
 
 Types of Queue more detail
 
-    - Double Ended Deque
+    1. Double Ended Deque
         - Deque or Double Ended Queue is generalized version of Queue data strucutre that allows insert and delete at both ends
         Operation Lists
         push_front() = inserts the element at the beginning
@@ -140,3 +142,20 @@ Types of Queue more detail
     Multi-level undo/redo functionality: Deques can be used to implement undo and redo functionality in applications. Each time a user performs an action, the current state of the application is pushed onto the deque. When the user undoes 
         an action, the front of the deque is popped, and the previous state is restored. When the user redoes an action, the next state is popped from the deque.
     
+ 
+ 2. Circular Queue = Is circualr data structure of normal Queue where the last data is connected to the first node in circular clockwises, Known as "Ring Buffer" as type of buffers "Circular Buffer", "Gap Buffer"
+    - getFront: get the front item from the queue
+    - getRear: get the last item from the queue
+    - enqueue(value): to insert an element into the circular queue. in a circular queue, the new element is always inserted at the rear position
+    - dequeue(): to delete an element from the circular Queue. in a circular queue, the element is always deleted from the front position
+
+    implement circular queue using Arrays
+        1 - initalize an array of size n, where n is the maximum number of elements that the queue can hold
+        2 - intialize three variables (size, capacity, and front)
+        3 - Enqueue: to enqueue an element x into the queue, do the following
+            1. Check if size == capacity (queue is full), display "queue is full"
+            2. if not full: calculate rear = (front + size) % capacity and insert value at the rear index. increment size by 1
+        4. Dequeue: to dequeue an element from the queue, do the following
+            1. check if size == 0 (queue is empty), display "Queue is Empty".
+            2. if not empty: retrive the element at the fornt index and move front = (front + 1) % capacity. also decremenet size by 1 and return the removed element 
+
