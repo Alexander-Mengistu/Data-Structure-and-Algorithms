@@ -44,7 +44,13 @@ Order should be read
 37. Two-Way Circular Insertion at the end 3.js
 38. Two-Way Circular Insertion at given position 4.js
 
-//Im Currently taking break from Double Circular Linked list
+39. Queue Operation Enqueue 1
+40. Queue Operation Dequeue 2
+41. Queue Operation Front 3
+42. Queue Operation Rear 4
+43. Queue Operation is Empty 5
+44. Queue Operation isFull 6
+45. Queue Operation Size 7
 
 
 
