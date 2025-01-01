@@ -159,3 +159,5 @@ Types of Queue more detail
             1. check if size == 0 (queue is empty), display "Queue is Empty".
             2. if not empty: retrive the element at the fornt index and move front = (front + 1) % capacity. also decremenet size by 1 and return the removed element 
 
+            
+

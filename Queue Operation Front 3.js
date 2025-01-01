@@ -7,9 +7,10 @@
 
 //Function to get front of queue
 front() {
-    // returns the front element of
+    // returns the front element of©
     // the queue without removing it
     if (this.isEmpty())
         return "No elements in Queue<br>";
     return this.items[0];
 }
+

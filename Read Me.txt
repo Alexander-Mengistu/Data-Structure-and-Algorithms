@@ -52,6 +52,9 @@ Order should be read
 44. Queue Operation isFull 6
 45. Queue Operation Size 7
 
+46. Stack Data Structure
+
+
 
 
 

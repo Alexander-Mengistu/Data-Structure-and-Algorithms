@@ -1,0 +1,15 @@
+A stack is a data structure where elements are stacked on top of each other. It follows the LIFO (Last In, First Out) principle, meaning that the element inserted last is the first to be removed.
+This is similar to a queue, which follows the FIFO (First In, First Out) principle, where the element that is inserted first is the first to be removed.
+FILO (First In, Last Out) is just another way to describe LIFO.
+
+easy to think about it as stack of plates.
+
+- Pushing element in to the stack is like adding a new plate on top
+- Popping removes the first element from the stack
+
+Pushing and Popping only happens one side of the lane. which is the top of the data stack
+easyiest way to think about stack is like a box you put your items in, can only take from the top till reach the bottom
+
+Types of Stack:
+    - Fixed Size Stack: is data structure that cant grow or shrink, fixed length if try to add element to it will say overflow error, and if the stack is empty and try to remove a item will be suggested that the struture is underflow error
+    - Dynamic Size Stack: Dynamic data structure can grow or shrink depending on the need of the software.
