@@ -13,3 +13,17 @@ easyiest way to think about stack is like a box you put your items in, can only 
 Types of Stack:
     - Fixed Size Stack: is data structure that cant grow or shrink, fixed length if try to add element to it will say overflow error, and if the stack is empty and try to remove a item will be suggested that the struture is underflow error
     - Dynamic Size Stack: Dynamic data structure can grow or shrink depending on the need of the software.
+
+Stack Applications, Advantages and Disadvantages
+- Function calls: Stacks are used to keep track of the return addresses of function calls, allowing the program to return to the correct location after a function has finished executing
+- Recursion: Stacks are used to store the local variables and return addressesof recursive function calls, allowing the program to keep track of the current state of Recursion
+- Expression evalution: stacks are used to evaluate expressions in postfix notation (reverse Polish Notation)
+- Syntax parsing: stacks are used to check the validdity of syntax in programming languages and other formal languages
+- Memory manamgement: stacks are used to allocate and manage memory in some operation systems and programming languages.
+- Used to solve popular problems like "Next greater, Previous Greaeter, Next Smaller, Previous Smaller, Largest Area in a Histogram and Stock Span Problems.
+
+Advantages = Simplicity, Efficiency, Last-in, First-out (LIFO), Limited Memory Usage
+Disadvantages = Limited Access, Potential For Overflow, Not Suitable for random access, Limited Capacity
+
+// You can also implement "Stack" with "LinkedList" 
+
