@@ -25,5 +25,11 @@ Stack Applications, Advantages and Disadvantages
 Advantages = Simplicity, Efficiency, Last-in, First-out (LIFO), Limited Memory Usage
 Disadvantages = Limited Access, Potential For Overflow, Not Suitable for random access, Limited Capacity
 
-// You can also implement "Stack" with "LinkedList" 
+You can also implement "Stack" with "LinkedList" 
 
+Time Complexity:
+push: O(1)
+pop: O(1)
+peek: O(1)
+is_empty: O(1)
+is_full: O(1)

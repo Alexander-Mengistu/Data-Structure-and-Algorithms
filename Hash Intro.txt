@@ -1,0 +1,44 @@
+Hash Data structure is a way to store key-value pairs, where a "key" is mapped to a "value" it uses a hash function
+to convert the key into an index an array or table, making data rerieval fast
+
+Hashing refers to the process of generating a fixed-size output from 
+an input of variable size using mathematic formulas as hash function, 
+function takes input generates and output after been hashed,
+This tequenique determines an index or location for the storage of an item in a data structure
+
+Hash data stucture has fix time in retirving data and searching data, unlinke arrays which consist of O(1)
+
+They is 3 types of Components in Hashing
+1. Key: a key can be anything string or integer which is fed as input in the hash function the tequnique that determines an index or location for storage of an item in a data structure
+2. Hash Function: The hash function receives the input key and returns the index of an element in an array called a hash table. The index is known as the "hash index"
+3. Hahs Table: hash table is a data structure that maps keys to values using a special function called a hash function. hash stores the data in an associative manner in an array where each data value has its own unique index.
+
+Key => Hash Funciton => Hash Table
+
+Collision?
+The hashing Process generates a small number for a big key, so there is a possibility that two keys could produce the same value. The situation 
+where the newly inserted key maps to an already occupied, and it must be handled using some collision handling technology.
+
+Advantages of Hashing 
+- Key Value support: hashing is ideal for implementing key-value data structures
+- Fast data retrieval: Hashing allows for quick access to elements with constant-time complexity.
+- Efficiency: insertion, deletion, and searching operations are highly efficient
+- Memeory Usage Reducation: hashing requires less memory as it allocates a fixed space for storing elements
+- Scalability: Hashing performs well with large data sets, maintaing constant access time.
+- Secrity and encryption: hashing is essential for secure data storage and integry verification.
+
+Disadvantages
+- Collisoion: when tow different keys produce the same hash value, a collsion occures. handling collisions (through methods like chaining or open address) can complicate the design and reduce performance
+- Memory usage: hash tables require resizing when the number of elements exceeds the table capacity. This resizing can lead to memory inefficiencies, especially when the table grows or shrinks dynamically
+- Ordering: Cant structure data in Order
+- Security Concerns: If the hash function is weak or predictable, hash tables can be vulnerable to attacks such as hash flooding, where malicious inputs are crafted to cause excessive collisions and degrade performance
+- Fix Size: many Hash have fix size length
+
+
+Use case 
+Detecting Duplicate Entries: 
+Load Balancing: In distributed systems, hash tables are used to map incoming requests or data to different servers in a load balancing scheme, ensuring an even distribution of load.
+Caching: Hash tables are used in caching systems to store frequently accessed data for quick retrieval. For example, web browsers use hash tables to store recently visited URLs or cache results of database queries.
+Password Storage: Hash tables are used in password management systems to store and look up hashed passwords. They can be paired with a secure hash function to protect sensitive data.
+Autocomplete and Spell Checking: Hash tables are used in applications like autocomplete systems, where they store large dictionaries and provide fast lookups for user input suggestions.
+Graph and Network Algorithms: Hash tables are often used in graph algorithms for fast access to nodes or edges, such as storing visited nodes or associating weights with edges.
