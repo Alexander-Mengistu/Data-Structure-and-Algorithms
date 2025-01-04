@@ -1,5 +1,9 @@
+https://www.youtube.com/watch?v=KyUTuwz_b7Q video on hash table
+
 Hash Data structure is a way to store key-value pairs, where a "key" is mapped to a "value" it uses a hash function
 to convert the key into an index an array or table, making data rerieval fast
+
+the "value" number itself can be calculated to get the "index number" to retrive the data, this process is done by hash function.
 
 Hashing refers to the process of generating a fixed-size output from 
 an input of variable size using mathematic formulas as hash function, 
@@ -42,3 +46,87 @@ Caching: Hash tables are used in caching systems to store frequently accessed da
 Password Storage: Hash tables are used in password management systems to store and look up hashed passwords. They can be paired with a secure hash function to protect sensitive data.
 Autocomplete and Spell Checking: Hash tables are used in applications like autocomplete systems, where they store large dictionaries and provide fast lookups for user input suggestions.
 Graph and Network Algorithms: Hash tables are often used in graph algorithms for fast access to nodes or edges, such as storing visited nodes or associating weights with edges.
+
+What is load factor?
+a hash table load factor is determined by how many elements are kept there in relation to how big the table is. The table may be cluttered and have longer search time and collusions if the load factor is high.
+an ideal load factor can be maintained with the use of a good hash function and propert table resizing.
+
+What is a Hash function?
+a function that translates keys to array indices is known as a hash function. the keys should be evenly distributed across the array via decent hash function to reduce collisions and ensure quick lookup speeds.
+
+---------------Integer Universe Assumption---------------------------------
+under the integer universe assumption, it is assumed that all keys are integers and lie within a specific finite range, denoted as U = {0,1,......, u -1}
+
+This assumption simplifies the design of hash functions by allowing the use of arithmetic operations to compute hash values. Two common methods for creating hashing functions under ths assumption are 1 "Hashing by division" and "Haashing by multiplication"
+1. "Hashing by division"
+    How it works
+        - The hash function computes the remainder when the key is divided by the size of the hash table (denoted as m)
+        - Formula: h(k) = k mod maintained
+        where k is the key and m is the size of the array
+
+        key Considerations
+        -the choice of m significantly affects performance. Using a prime number for m often leads to better key distribution and fewer collisions
+        example
+            - If k = 37 and m = 10
+                the key 37 is stored at index 7
+            advantages 
+            - Simple and efficient
+            - Works well wen m is chosen carefully (e.g a prime number)
+
+2. "Hashing By Multiplication"
+    How it works
+        1. Multiply the key K by a constant A, where 0 < A < 1.
+        2. Extract the fractional part of the product k - A (i.e., (k-a) mode 1).
+        3. Multiply the fractional part by the size of the array m, and take the floor of the result to get the index
+                h(k) = [m-((k-A) mod 1)]
+
+            Key Considerations
+            - The constant A is typically chosen carefully to maximize uniformity. A common choice is the reciprocal of the golden ratio (A = 0.6180339887)
+                - if k = 37, A = 0.618, and m = 10:
+                    h(37) = [10-((37-0.618) mode 1)]
+                    multiply by 10: 10 - 0.866 = 8.66
+                    taking the floor gives h(37) = 8
+
+                advantages 
+                - Performs well even when the array size m is not a prime number
+                - Robust for uneven distributions of keys
+
+Under the integer universe assumption, keys are integers in a specific range, enabling simple hashing techniques.
+Hashing by division is straightforward and efficient, especially when the array size is a prime number.
+Hashing by multiplication ensures uniform distribution even when the array size is not prime, but requires careful selection of constants for optimal performance.
+
+
+Choosing the right Hash Function
+a. Uniform distribution
+    the hash function should distribute data evenly across the avaiable buckets to minimize collisions
+    poor distribution can lead to clustering, which degrazdes performance
+b. speeds
+    for most data structure operation such as insert, search, delete, speed is critical
+    a hash function should compute quickly to avoid becoming a bottleneck
+c. Deterministic behavious
+    the same input should always produce the same hash value, ensuring consistency
+d. Low collsion probability
+    collsions two different keys hashing to the same value should be rare but are inevitable for large datasets
+e. Simplicity vs complexity
+    simpler hash functions work well for predictable, small datasets
+    more complex functions are better for larger or unpreditcable data
+f. Collision, To ensure that the number of collisions is kept to a minimum, a good hash function should distribute the keys throughout the hash table in a uniform manner. This implies that for all pairings of keys
+, the likeihood of two keys hashing to the same position in the table should be rather constant
+
+Collision happens when two or more keys point to the same array index chaining, opening adddressing and double hashing are a few techniques for resolving collisions.
+
+Open Addressing: collsiions are handled by looking for the following empty space in the table. if the first slot is already taken, the hash function is applied to the subsequent slots until one is left empty. There
+various ways to use the approach, including double hashing, linear probing, and quadratic probing
+
+Separate Chaining: In separate chaining, a linked list of objects that hash to each slot in the hash table is present. Two keys are included in the linked list if they hash to the same slot. This method is rather simple to use and can manage several collisions.
+Robin Hood hashing: To reduce the length of the chain, collisions in Robin Hood hashing are addressed by switching off keys. The algorithm compares the distance between the slot and the occupied slot of the two keys if a new key hashes to an already-occupied slot.
+ The existing key gets swapped out with the new one if it is closer to its ideal slot. This brings the existing key closer to its ideal slot. This method has a tendency to cut down on collisions and average chain length.
+
+Dynamic resizing
+This feature enables the hash table to expand or contract  in respond to changes in the number of elements contained in the table.
+
+Rememebr not every programming langauge supports hashing, suporting langauges are listed bellow, They can be used a customized data structure in additon to frequntly being included in the standard library
+Python, Java, C++ and Ruby are just a few of the programming languauges that support hash tables. 
+
+
+
