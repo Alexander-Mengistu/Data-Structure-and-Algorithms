@@ -10,7 +10,9 @@ an input of variable size using mathematic formulas as hash function,
 function takes input generates and output after been hashed,
 This tequenique determines an index or location for the storage of an item in a data structure
 
-Hash data stucture has fix time in retirving data and searching data, unlinke arrays which consist of O(1)
+Hash data stucture has fix time in retirving data and searching data, unlinke arrays which consist of O(1), because if you no the index location the length of the array is indepent of the size and position in the array. however if the hash function is not as effective causing alot of collision this will increase hash search complexity time. 
+collision handling technology. example of collsion technology is
+when index is occupied search for the index after that if that is also occupied keep searching till find a empty index sloth "this is now as Linear Probing, if linear probing doesnt find locatin till end of the array it will cycle again from the start", as you can see this will increase search time for retriving and inserting data as you will implement a brute force search, extending the complixty time. Placing a data that is not in its current address is called "Open Addressing" to deal with this problem can make the hash table bigger than needed to delete with collision, another solution to this problem is to created a linked list to the hash key location, in one hash table location can have two seperate data. this know as "Chanining or closed addressing"
 
 They is 3 types of Components in Hashing
 1. Key: a key can be anything string or integer which is fed as input in the hash function the tequnique that determines an index or location for storage of an item in a data structure
@@ -21,7 +23,9 @@ Key => Hash Funciton => Hash Table
 
 Collision?
 The hashing Process generates a small number for a big key, so there is a possibility that two keys could produce the same value. The situation 
-where the newly inserted key maps to an already occupied, and it must be handled using some collision handling technology.
+where the newly inserted key maps to an already occupied, and it must be handled using some collision handling technology. example of collsion technology is
+when index is occupied search for the index after that if that is also occupied keep searching till find a empty index sloth, as you can see this will increase search time for retriving and inserting data as you will implement a brute force search, extending the complixty time.
+
 
 Advantages of Hashing 
 - Key Value support: hashing is ideal for implementing key-value data structures
@@ -32,7 +36,7 @@ Advantages of Hashing
 - Secrity and encryption: hashing is essential for secure data storage and integry verification.
 
 Disadvantages
-- Collisoion: when tow different keys produce the same hash value, a collsion occures. handling collisions (through methods like chaining or open address) can complicate the design and reduce performance
+- Collisoion: when tow different keys produce the same hash value, a collsion occures. handling collisions (through methods like chaining or open address put data in address out side of location) can complicate the design and reduce performance
 - Memory usage: hash tables require resizing when the number of elements exceeds the table capacity. This resizing can lead to memory inefficiencies, especially when the table grows or shrinks dynamically
 - Ordering: Cant structure data in Order
 - Security Concerns: If the hash function is weak or predictable, hash tables can be vulnerable to attacks such as hash flooding, where malicious inputs are crafted to cause excessive collisions and degrade performance
@@ -54,6 +58,8 @@ an ideal load factor can be maintained with the use of a good hash function and 
 What is a Hash function?
 a function that translates keys to array indices is known as a hash function. the keys should be evenly distributed across the array via decent hash function to reduce collisions and ensure quick lookup speeds.
 
+
+Hashing Algorithm
 ---------------Integer Universe Assumption---------------------------------
 under the integer universe assumption, it is assumed that all keys are integers and lie within a specific finite range, denoted as U = {0,1,......, u -1}
 
@@ -94,6 +100,18 @@ This assumption simplifies the design of hash functions by allowing the use of a
 Under the integer universe assumption, keys are integers in a specific range, enabling simple hashing techniques.
 Hashing by division is straightforward and efficient, especially when the array size is a prime number.
 Hashing by multiplication ensures uniform distribution even when the array size is not prime, but requires careful selection of constants for optimal performance.
+
+Collision Resolution 
+when resoluving collision if the calcualted address is ocuppied 
+- Linear probing - Trys the next table along till finds empty space, this will result in "primary clusturing" keys might bunch together inside the array and large proportion will be unocupied
+    alternative methods to probing
+        - "Plus 3 rehash" = look at every 3 location till space is found
+        - "Quadratic probing (failed atempts)2 = when collision accures the distance of search growths dramatically 
+        - "Double Hashing" applays second hash key to location when attempt has failed 
+
+- Closed Addressing - is chaining items together that have collieded to a list or other data structure.
+one big solution is if you know the data in advance can come up with perfect hash fucntion in advanced to occupie all hash table lcoation accordlingly 
+
 
 
 Choosing the right Hash Function
