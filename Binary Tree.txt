@@ -1,0 +1,221 @@
+Binary Tree
+
+A binary tree data stucture is a hierachical data structure in which each node has at most two children, referred to as the left child and the right child. It is commonly used in computer science for efficient storage
+and retrieval of data, with various operations such as insertion, deletion and and traversal
+
+The topmost node in a binary tree is called the "root" and the bottom most node are called leaves, that are single nodes
+
+Representation of binary tree
+each node in a binary tree has three parts
+- Data
+- Pointer to the left child 
+- Pointer to the right child
+
+child node node that has no nodes under it the data is "Null"
+
+Terminologies In Binary Tree
+- Nodes: The fundamental part of a binary tree, where each node contains "data" and "link" to two child nodes
+- Root: The top topmost node in a tree is knwon as the root node. it has no parent and servesthe starting point for all nodes in the tree.
+- Parent Node: a node tat has one or more child nodes. In a binary tree, each node can have at most two children.
+- Child Node: is a descendant of parent node (a parent)
+- Depth of a node: the number of edges from a specific node to the root node. THe depth of the "root" node is zero
+- Height of a binary Tree: The number of nodes from the deepest leaf node to the root node
+- Subtree: is a tree bellow a tree
+- Edge: is the line connecting both nodes
+
+Specificication of different types of Binary Terminologies
+
+1. "Full Binary Tree" = is a tree that doesnt have single children, meaning every parent has left child and right child, or no child
+       A
+     /   \
+    B     F
+  /  \
+ C    D
+
+Let T be a nonempty, full binary tree then:
+    T = tree, I = Internal Nodes, L = Leafs
+    - If T has I internal Nodes, the number of leaves is L = I + 1
+    - If T has a total of N nodes, the number of internal nodes is I = (N - 1)/2
+    - If T has a total of N nodes, the number of leaves is L = (N + 1)/2
+    - If T has L leaves, the total number of nodes is N =2L -1
+    - If T has L leaves, the number of internal nodes is I = L - 1
+    
+
+    There are a maximum of 2k nodes in level k for every k >= 0.
+    The binary tree with λ levels has maximum of 2λ-1 nodes.
+    The binary tree with N nodes has the number of levels at least [log (N + 1)].
+    The binary tree with L leaves has the number of leaves at least [log L] + 1.
+
+2. "Degenerate Binary Tree" = Every non-leaf node has just one child in a binary tree knwon as a Degenerate Binary Tree, The tree effectively transofrms into a linked list 
+as a result, with each node linked to its single child. "Degenerate Binary Tree" can be used to create a stack Data Structure.
+"Degenerate tree is also knwon as "Linear Tree" or "Pathological Tree" each node has one parent
+containing in one line, like a linked list, but remeber if you were to draw a binary tree will still draw the null children of each child and parent
+
+      A  or  A      or     A            But actually looks                   A
+     /        \             \         becuae of the null data               / \
+    C          C             C  Remeberer we are using Binary treee        -   B
+   /            \            /                                                / \                    
+  D              D          D                                                C   -
+
+    Use case: Degernate Binary trees are uneffective to use, you may wonder why it has a name and utilized as learning material because
+    it shows the immportance of balanced tree, and its effictivance, example degenerate trees can be used in analysis of data structures to understand the limits and potential bottlenecks in algorihtms 
+    more example can be used for other algorithms as anaylzing the "Time Complexity" of only certain algorithms under poor conditions.
+    and one more example is providing upper and lower bounds for certain problems, showing the efficiency of tree structures in the best, average, and worst cases
+    in some instance it can be used for recusrive programming and dynamic programming for test
+
+    left skewed and right skewed , just means which direction the data flows
+3. Complete Bianry Tree?
+A complete binary tree is a special type of binary tree where all the levels of the tree are filed 
+completely except the lowest level nodes which are filled from as left as possible.
+       A
+     /   \
+    B     C 
+   / \   /
+  D  E  F
+
+More Indepth explaintion of "Full Tree" vs "Complete Tree" https://www.geeksforgeeks.org/complete-binary-tree/   once i get the chance write all example and differences
+
+4. Perect Binary Tree?
+All the leaf nodes are the same depth, and all non-leaf nodes have two children. In simple terms, this means that all leaf nodes are at the maximum depth of the tree,
+and the treee is completely filled with no gaps, in other words, it can be said that each level of the treee is completely filed by notes.
+
+Perfect binary trees have a number of usefull properties that make them usefull in various applications. For example, they are often used in the implmention of heaps data structures as 
+well as construction of threaded binary trees. The are also used in implemention of algorithms such as heapsort and merge sort.
+
+Perfect Bianry Tree 
+                    1          or just the root also a perfect tree its self
+                  /  \
+                 2    3
+                / \  / \
+               4   56   7
+The maximum number of nodes in a perfect binary tree is given by the formula 2^(d+1) – 1, where d is the depth of the tree. This means that a perfect binary tree with a depth of n has 2^n leaf nodes and a total of 2^(n+1) – 1 nodes.
+
+Properties of a perfect binary tree:
+- Degree: The degree of a node of a tree is defined as the number of children of that node. All the internal nodes have a degree of 2. The leaf nodes of a perfect binary tree have a degreee of 0
+- Number of leaf nodes: if the height of the perfect binary treee is h, then the number of leaf nodes will be 2h because the lst level is completely filled
+- Depth of a node: average depth of a node in a perfect Binary tree is Θ(ln(n)).
+/////////////this is more information that i currently yet doent understand, bellow///////////////////////
+Relation between leaf nodes and non-leaf nodes: No. of leaf nodes = No. of non-leaf nodes +1.
+- Total number of nodes: A tree of height h has total nodes = 2h+1 – 1. Each node of the tree is filled. So total number of nodes can be calculated as 20 + 21 + . . . + 2h = 2h+1 – 1.
+- Height of the tree: The height of a perfect binary tree with N number of nodes = log(N + 1) – 1 = Θ(ln(n)). This can be calculated using the relation shown while calculating the total number of nodes in a perfect binary tree.
+
+quize to check after is 
+
+6. Balanced Tree or also known as height-balanced binary tree, is defined as a binary tree in which the height of the left and right subtree of any node differ by not more than 1.
+            1                                                1
+          /   \                                            /   \
+        2      3      This is not balanced tree ->        2     3
+       / \                                               / \
+      4   5                                             4   5       
+                                                       /
+                                                      6
+- A single node is always balanced. It is also referred to as a height-balanced binary tree
+- An empty tree (root = null) is also always considered as balanced
+
+How to check for "Balanced Tree"
+1. The absolute difference between heights of left and right subtreees at any node should be less 1.
+2. For each node, its left subtree should be a balanced binary tree.
+3. For each node, its right subtree should be a balanced binary tree.
+
+For simplicity purposes for now => they is similiarity "Balanced Binary Tree" that uses to AVL tree, Red black trees
+
+/////////////tree Data Structures: From Binary Search Trees to Segment Trees
+1. Binary Search tree = is efficent structure for organizing tree for quick search optimization and quick update
+(BST) is a binary tree where every node in the left subtree is less than the root, and every node in the right subtreee is of a value greater than the root.
+The properties of a binary search tree are recursive: if we consider any node as a "root" these properties will remain true
+         4 
+       /   \
+      2     6
+     / \   / \
+    1   3 5   7
+leftside is 4 < 2 and rightside is 4 < 6  
+in Order traversal: 1 2 3 4 5 6 7
+Binear search will need its on Folder, topics to cover
+//////Operation of BST
+Insertion in BST?
+Searching In BST =
+Deletion In BST =
+BST Traversals =
+Minimum in BST =
+Maximum in BST =
+Floor In BST =
+Ceil in BST =
+Inorder Successor in BST =
+Inorder Predecessor in BST =
+Handling Duplicates in BST =
+Applications of BST = 
+Advatnges of BST = 
+Disadvatnges of BST = 
+Limitation = 
+
+2. AVL tree = An AVL tree defined as a self-balancing Binary Search Tree (BST) where the difference 
+between heights of left and right subtrees for any node annot be more than one.
+AVL search will need its on Folder, topics to cover
+//////Operation Of BST
+Insertion = 
+Deletion = 
+Searching = 
+Rotating the subtrees in an AVL Tree:
+an AVL tree may rotate in one of the follwoing four ways to keep itself balanced
+Left Rotation =
+Right Rotation = 
+Left-Right Rotation = 
+Right-Left Rotation = 
+Advantages of AVL Tree = 
+Disadvatnges of AVL Tree = 
+Limition =
+
+3. Red Black Tree = Binary search trees are a fundamental data stucture, but their performance can suffer if the tree becomes unbalanced.
+Red Black Trees are a type of balanced binary search tree that use a set of rules to maintain balance, ensure logarithmic time complexity for 
+operation like insertion, deltion, and searching, regardless of the intitial shape of the tree. Red Black Tree are Self balancing
+Red Black Tree search will need its on Folder, topics to cover
+//////Operation Of BST
+Insertion = 
+Deletion = 
+Searching = 
+Rotation = 
+Left Rotation =
+Right Rotation = 
+Comparision with AVL Tree = 
+Advantages =
+Disadvatnges = 
+Application of Red Black Tree =  
+Limition = 
+
+4. b tree = Is a slef balancing tree data stucuttre that maintains sorted data and allows searches, sequntial access, insertions, and deletions in logarithmic time,
+this is alternative to search binary for being efficient for the things that search binary is limited on
+b tree search will need its on Folder, topics to cover
+//////Operation Of BST
+Insertion = 
+Deletion = 
+Searching = 
+Advantages = 
+Disadvatnges = 
+Limition = 
+
+5. b+ tree = A B+ tree can be viewed as a B-tree in which each node contains only keys (not key–value pairs), and to which an additional level is added at the bottom with
+ linked leaves. The primary value of a B+ tree is in storing data for efficient retrieval in a block-oriented storage context
+ b+ tree search will need its on Folder, topics to cover
+//////Operation Of BST
+Insertion = 
+Deletion = 
+Searching = 
+Advantages = 
+Disadvatnges = 
+Limition = 
+
+6. segment tree = Is a data stuctures that allows efficent querying and updating of intervals or segments of an array
+- It is particularly usefull for problems inloving range queries, such as find the sum, minimum, maximum, or any other opration over a specific range of elements in array.
+- The tree is built recursively by dividing the array into segments until each segment represetns a single elements
+- This structures enables fast query and update operation with a time complexity of o(log n),
+making it a powerfull tool in algorithm and optimization
+
+Segment Tree search will need its on Folder, topics to cover
+//////Operation Of Segment Tree
+Finding Range Sum queries
+Searching index with given prefix sum
+Fidning range Max/Min
+Counting frequncy of range max/minimum
+find range GCD/LCM
+Finding range AND/OR/XOR
+Finding number of zeros in the given range or find index of Kth zero
