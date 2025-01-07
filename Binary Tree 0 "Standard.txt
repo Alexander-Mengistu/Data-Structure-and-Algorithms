@@ -219,3 +219,35 @@ Counting frequncy of range max/minimum
 find range GCD/LCM
 Finding range AND/OR/XOR
 Finding number of zeros in the given range or find index of Kth zero
+
+
+Learn what is DFS and BFS.
+
+------------------------------------Operations on Binary Tree
+Operations that can be done on Bianry Tree
+- 1. Traversal in Binary Tree
+- 2. Insertion in Binary Tree
+- 3. Searching in Binary Tree
+- 4. Deltion in Binary Tree
+
+Depth-First Search (DFS) algoriths: DFS explores as far down a branch as possible before backtracking. 
+It is implemented using Recusion. The main traversal methods in DFS for binary trees are
+- Preorder Traversal (current-left-right) n-lr: Visits the node first, then left subtree, then right subtree.
+     A               a           a
+          then >    /   then >  / \
+              b    b           c   d
+
+- Inorder Traversal (left-current-right) l-n-r: Visits the left, then the node, then the right subtree
+                     A            a
+     /     then >   /    then >  / \
+    B              B            c   d    
+
+- Postorder Traversal (left-right-current) lr-n: Visists left subtree, then right, then the node
+                                   A
+     /    then >    /  \  then >  / \
+    B              B    C        C   D    
+If want to practice on paper https://www.youtube.com/watch?v=BHB0B1jFKQc&list=LL&index=4&t=933s
+
+-------Preorder Travers - Inorder Traversal - Postorder Traversal ----------------
+Will have more indepth explaintion on they own file.
+Learning traverse in binary tree will help you understand recursion or iteratively problem solving in Stack data Structure
