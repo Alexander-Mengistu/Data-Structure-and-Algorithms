@@ -130,7 +130,7 @@ The properties of a binary search tree are recursive: if we consider any node as
     1   3 5   7
 leftside is 4 < 2 and rightside is 4 < 6  
 in Order traversal: 1 2 3 4 5 6 7
-Binear search will need its on Folder, topics to cover
+Binary search will need its on Folder, topics to cover
 //////Operation of BST
 Insertion in BST?
 Searching In BST =
@@ -232,6 +232,7 @@ Operations that can be done on Bianry Tree
 
 Depth-First Search (DFS) algoriths: DFS explores as far down a branch as possible before backtracking. 
 It is implemented using Recusion. The main traversal methods in DFS for binary trees are
+--Note Learing Recursion is must prior, after learning recursion, Learning bDS Recursion will improve your recursion programming and iterative programming.
 - Preorder Traversal (current-left-right) n-lr: Visits the node first, then left subtree, then right subtree.
      A               a           a
           then >    /   then >  / \
@@ -250,4 +251,5 @@ If want to practice on paper https://www.youtube.com/watch?v=BHB0B1jFKQc&list=LL
 
 -------Preorder Travers - Inorder Traversal - Postorder Traversal ----------------
 Will have more indepth explaintion on they own file.
+Pre-requesit 
 Learning traverse in binary tree will help you understand recursion or iteratively problem solving in Stack data Structure

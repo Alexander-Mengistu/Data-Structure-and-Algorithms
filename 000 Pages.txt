@@ -52,7 +52,25 @@ Order should be read
 44. Queue Operation isFull 6
 45. Queue Operation Size 7
 
-46. Stack Data Structure
+46. Stack Data explain 1
+47. stack implement 2
+48. stack operation push 3
+49. stack operation pop 4
+50. stack operation top or peek operation 5
+51. stack operation isempty 6
+52. stack operation isfull 7
+
+53. Binary tree 0 "standard"
+54.   Binary tree Declare 0.1
+55   binary tree creating node with 4 nodes 0.2
+56 Binary tree 0 BDS prerequesitie 0.3
+57. Binary tree 2 standard bds vs BFS
+58. binary tree 3 standard insert
+59. binary tree 4 stanrdard search
+60. binary tree 5 standard deletion
+
+
+
 
 
 Re-name the format naming for single Link like "Binary Tomoz"

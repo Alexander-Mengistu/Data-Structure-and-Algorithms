@@ -1,16 +1,17 @@
 // Learning traverse in binary tree will help you understand recusion or iteratively problem solving in Stack data Structure
-
+/*
 Breadth-First Search (BFS) Algorithms: BFS explores all nodes at the present depth before
 moving on to nodes at the next depth level. It is typically implemented using a queue.
 BFS in a binary tree is commonly refered to as "Level Order Traversal"
+*/
 
 //Node Structure {
-    constructor(data) {
+    constructor(data); {
         this.data = data;
         this.left = null; 
         this.right = null;
     }
-}
+
 
 //In-Order DFS: left, root, right
 function inOrderDFS(node) {
@@ -33,7 +34,7 @@ function inOrderDFS(node) {
         if (node == null) return;
         postOrderDFS(node.left);
         postOrderDfs(node.right);
-        process.stdout.write(node.data _ " ");
+        process.stdout.write(node.data + " ");
     }
 
 // bfs: level order traversal

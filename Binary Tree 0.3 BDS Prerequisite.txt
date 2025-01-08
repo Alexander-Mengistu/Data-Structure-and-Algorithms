@@ -1,0 +1,39 @@
+https://www.youtube.com/watch?v=Q83nN97LVOU useful video
+Learning Recursion is must first to learn BDS
+
+Recursion is a function that calls it function till a condition is meat, and step by step returns to the end
+
+recursion can be replaced by loops achieve the same result as recursion. Recursion can sometimes be replaced by an iterative loop toimprove efficiency
+code below shows how loops can replace recursion
+
+Recursion code 
+  function factorial(n) {
+    if (n <= 1) return 1;
+    return n * factorial(n - 1);
+  }
+
+Iterative factorial Function (Using a loop)
+  function factorial(n) {
+    let result = 1;
+    for (let i = 1; i <= n; i++) {
+      result *= i;
+    }
+    return result;
+  }
+
+you may be wondering if loops are efficent, why use recursion yes recusion might not be as complex as iterative, recusion is a tool
+they is a time and place to use them for example if recursive structure is in use such as "Tree traversal, or fibonacci numbers, divide and conquer algorithms"
+
+Loops Benefits
+  - Memory efficiency: each recusive call adds a new frame to the call stack. If recursion goes too deep 
+  (especially for large input values), it can lead to "stack overflow". loops dont't have this issue because they reuse the same frame, making them more memory efficient.
+
+  - Performance: Recursion can be slower than loops in some langages, especially if the langauge doesnt optimize tail recursion. Loops,
+  on the other hand, are generally faster because they avoid the overhead of function calls and the creation of new stack frames
+
+When Recursion is preferred
+  - The problem has a naturally recursive structure (tree traversal, fibonacci number, divide and conquer algorithms)
+  - The Algorithm involves breaking down a problem into smaller subproblems
+
+Yes, loops can do what recursion does, but recursion is often more inutive for problems that inlvovles heirachical or repetitive structures.
+
