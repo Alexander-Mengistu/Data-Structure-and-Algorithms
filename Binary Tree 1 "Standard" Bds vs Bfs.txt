@@ -1,16 +1,19 @@
 
 
 
-BDS vs BFS
+
+DFS vs BFS
+DFS = Depth Depth Search
+BFS = Breadth First Search
 Since they sound similiar you will think they will have the same funtionality however, this is not true because becaue 
-BDS is used for Insertion, Deletion, however BFS is not used for those activitys similiar of BDS and BFS is when comes to 
+DFS is used for Insertion, Deletion, however BFS is not used for those activitys similiar of DFS and BFS is when comes to 
 Traversing and searchign, they have different methods of traversing through binary tree. BFS can identify Location such as Insertion Location,
 Deletion Location but not able to actually perform those operation. main Purpose is to traverse through data list.
-Recursion is must to learn BDS Prior. more Information on BDS and BFS on "Binary Search 0 Standard"
+Recursion is must to learn DFS Prior. more Information on DFS and BFS on "Binary Search 0 Standard"
 
-BDS Can peform varies operation such as Traversing, Insertion, Deletion, Search. and can do each operation with different 3 methods
-such as can Traverse thorugh list with "Pre-Order", "In-Order", "Post-Order". BDS is depth search algoirhtm utilises backtracking when finishes the
-search known as recursion. Recursion is must to learn BDS Prior. more Information on BDS and BFS on "Binary Search 0 Standard"
+DFS Can peform varies operation such as Traversing, Insertion, Deletion, Search. and can do each operation with different 3 methods
+such as can Traverse thorugh list with "Pre-Order", "In-Order", "Post-Order". DFS is depth search algoirhtm utilises backtracking when finishes the
+search known as recursion. Recursion is must to learn DFS Prior. more Information on DFS and BFS on "Binary Search 0 Standard"
 
 
 

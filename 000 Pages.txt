@@ -65,9 +65,12 @@ Order should be read
 55   binary tree creating node with 4 nodes 0.2
 56 Binary tree 0 BDS prerequesitie 0.3
 57. Binary tree 2 standard bds vs BFS
-58. binary tree 3 standard insert
+58. binary tree 3 standard Insert Recursion BFS
+58. binary tree 3 standard Insert Iterative BFS
 59. binary tree 4 stanrdard search
-60. binary tree 5 standard deletion
+60. binary tree 5 standard deletion Recursion BFS
+60. binary tree 5 standard deletion Iterative BFS  https://www.geeksforgeeks.org/binary-search-tree-set-3-iterative-delete/
+
 
 
 
