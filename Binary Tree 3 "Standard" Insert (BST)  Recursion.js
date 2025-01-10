@@ -12,6 +12,9 @@ Steps are of the algorithm are
     5. Repeat steps 2 and 3 until you reach a leaf node
     6. Attach the "new Key" as a left or right child based on the comparison with the leaf node's value
 
+    Remember when we insert to a tree will always be a leaf, we will not be re-aranging and of the tree.
+
+
 Step 01
 currNode ---->   100
                 /  \
