@@ -253,3 +253,60 @@ If want to practice on paper https://www.youtube.com/watch?v=BHB0B1jFKQc&list=LL
 Will have more indepth explaintion on they own file.
 Pre-requesit 
 Learning traverse in binary tree will help you understand recursion or iteratively problem solving in Stack data Structure
+
+
+Binary Search Tree Intro to Min and Max
+1. If the left subtree off any node is not empty, the value of all nodes on the left subtree is
+less.
+                  60 
+              /       \
+             40        80
+            /  \     /   \
+           20   50  70    90
+          / \
+         10  30 
+
+2. If the right subtree of any is not empty, The value of all nodes on the right subbtree is 
+greater than the alue of its root Note
+                  60 
+              /       \
+             40        80
+            /  \     /   \
+           20   50  70    90
+          / \
+         10  30 
+
+3. The left subtree and the right subtree of any node are also
+                  60 
+              /       \
+             40        80
+            /  \     /   \
+           20   50  70    90
+          / \
+         10  30 
+
+Binary Search Tree Maximum and Minimum
+
+Minimum Value: The small value is on the left child node, as long as the recursion traverses
+the left child until be empty, the current node is the minimum node. 
+                     (60)
+                  /        \
+                 (40)      80
+                /  \       /  \      
+              (20)  50    70   90
+              / \
+           (10)  30               <-------- Min value is 10. 
+             
+Maximum Value: the large value is on the right child node, as long as the reursive traversal
+is the right child until be empty, the current node is large node. 
+                     (60)
+                  /        \
+                 40       (80)
+                /  \       /  \
+               20  50    70   (90)       <------- Max value is 90
+              / \
+            10  30
+
+Side things to learn 
+ - Floor in BST
+ - 

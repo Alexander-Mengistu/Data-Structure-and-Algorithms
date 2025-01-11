@@ -70,7 +70,10 @@ Order should be read
 59. binary tree 4 stanrdard search
 60. binary tree 5 standard deletion Recursion BFS
 60. binary tree 5 standard deletion Iterative BFS  https://www.geeksforgeeks.org/binary-search-tree-set-3-iterative-delete/
-
+61. Bianry Tree 6 "Standard" (BST) Inorder Predecessor in BST
+62. Binary Tree 7.1 "Standard" inOrder Successor In BST
+63. Binary tree 7.2 "standard" Inorder Predecessor In BST
+64. Binary Tree 8 "standard" Min and Max
 
 
 
