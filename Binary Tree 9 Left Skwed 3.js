@@ -14,14 +14,15 @@ containing in one line, like a linked list, but remeber if you were to draw a bi
 
 //A skewed binary tree is a type of binary tree in which all the nodes have only either one child or no child.
 //Types of Skewed Binary trees, there are 2 special types of skewed tree:
-// 1. Left Skewed Bianry Tree: These are those skewed binary treees in which all the nodes re having a left child or no child at all it is a left side dominated tree. All the right children remain as null
+// 1. right Skewed Bianry Tree: These are those skewed binary treees in which all the nodes re having a right child or no child at all it is a right side dominated tree. All the right children remain as null
 
+// This code might have error for right skwed
 class Node 
 {
     constructor()
     {
         this.key=0;
-        this.left=this.right=null;
+        this.right=this.right=null;
     }
 }
 
@@ -30,7 +31,7 @@ function newNode(key)
 {
     let temp = new Node();
     temp.key = key;
-    temp.left = temp.right = null;
+    temp.right = temp.right = null;
 
     return (temp);
 }
@@ -46,5 +47,5 @@ function newNode(key)
 */
 
 let root = newNode(1);
-root.left = newNode(2);
-root.left.left = newNode(3);
+root.right = newNode(2);
+root.right.right = newNode(3);
