@@ -309,4 +309,6 @@ is the right child until be empty, the current node is large node.
 
 Side things to learn 
  - Floor in BST
- - 
+
+
+Applications of Binary Tree?
