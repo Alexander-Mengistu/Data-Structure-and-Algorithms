@@ -1,0 +1,43 @@
+
+Tries
+
+"Trees are data structures where elements are stored in the nodes. Each node represents a single element, and each element is stored within its own node."
+"Trie: Tree structure in which elemetns are represented by paths."
+
+Trie comes from the word "re"trie"val", was meant to be named retrieval, since trie sounds like tree, they gave it the pronousation "trys" spelled "tries"
+
+Tries are used as most cases as "word" node, storing "Characters"
+Those Characters represents a word or part of a word, lets us look up very quickly 
+
+Tries data structure is a used for storing a dynamic set of strings. it is commonly used for efficient "retrieval" and "storage"
+of keys in a large dataset. the sturcutre supports operations such as "insertion, Search & Deletion"
+
+
+                     *                      Keeping mind the tries tree branch is not completed as its to complex to draw
+                  /     \                   My Dictionary 
+                 C       T                  Car, Card, cards, Cot, Cots, Trie, Tried, Tries, Try, not all words are on the tries
+               /   \      \
+              A     O      R              The way this prefix search Character work is example you search "c" yes thats in the tree
+             /      /     /  \            then you search "a" yes thats in the tries then "r" yes thats also in the tries.
+            R      *     I    Y    
+
+            Tries usualy places with word validation
+    
+    Key properites of a trie
+    Node: each node represent a Character from a storing
+    Edges: each edge between nodes represents a transition from one Character to the next
+    Root: the root node represents the starting point, and it doesnt contain any Character
+    End of Word Marker: Each node that represents the ned of a word is typically marked with a special flag to indicated that a valid words ends there.
+
+    Tries: 
+        Why: Tries are a specialized tree structure used primarily for managing dicitonaries or sets of strings. they're useful
+        for problems involving fast retrieval of strings, prefix matching, etc. While similar to binary trees, tries operate on the
+        concept of string characters and are particularly usefull in application like autocomplete.
+
+        key Conecepts: Nodes representing characters, prefix matching, insert, search, and delete operations.
+        
+    
+
+
+                       
+ 
