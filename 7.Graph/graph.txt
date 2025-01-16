@@ -1,0 +1,31 @@
+Graph Algorithms 
+
+Graph algorithms are methods used to manipulate and anaylze graphs, solving various range of problems like "finding
+the shortest path, cycle detection.
+
+Graph Data structure is a non-linear data structure consisting of vertices and edges. it is useful in fields such as 
+social netowrk analysis, recommendation systems, and computer networks. in the field of sports data science, graph data 
+structure can be used to analyze and understand dynamics of team performance and players interaction on fields
+
+              (1)
+              /  \
+    (5)---(3)    (2)--(6)
+             \    /
+              (4)
+
+() = Nodes also knwon as Vertices
+-  = lines are know as edges or arc, they connect 2 nodes together.
+
+Notation 
+G = Graph
+V = Vertics 
+E = Edges
+
+G=(V,E)
+
+Components of Graph Data Structure
+Vertices = Vertices are the fundamental units of the graph. Sometimes, vertices are also known as vertex or nodes. Every node/vertex can be labeled or unlabelled.
+Edges = Edges are drawn or used to connect two nodes of the graph. It can be ordered pair of nodes in a directed graph. Edges can connect any two nodes in any possible way. There are no rules. Sometimes, edges are also known as arcs. Every edge can be labelled/unlabelled.
+
+
+
