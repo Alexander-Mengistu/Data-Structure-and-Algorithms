@@ -23,9 +23,32 @@ E = Edges
 
 G=(V,E)
 
-Components of Graph Data Structure
+- Components of Graph Data Structure
 Vertices = Vertices are the fundamental units of the graph. Sometimes, vertices are also known as vertex or nodes. Every node/vertex can be labeled or unlabelled.
 Edges = Edges are drawn or used to connect two nodes of the graph. It can be ordered pair of nodes in a directed graph. Edges can connect any two nodes in any possible way. There are no rules. Sometimes, edges are also known as arcs. Every edge can be labelled/unlabelled.
 
+- Types of graphs Data Structure
+    1. Null Graph
+    a graph with null, if there is no edges
+         (3)                                           (2) <---- Trivial Graph
+    (5)       (1) <---- Null Graph
+         (4)
+
+
+    2. Trivial Graph 
+    Graph having only a single vertex, it is also the smallest graph possible.
+
+    3. Unidrected Graph 
+    A graph in which edges do not have any direction. That is the nodes are unorded pairs in the definition of every edge.
+
+    4. Directed Graph
+    A graph in which edge has direction. That is the nodes are ordered pairs in the definition of every edge.
+     Undirected Graph                       Directed Graph
+           (3)                                    (3)
+        /      \                               /      \     <--edges have direction example 3 -> 1 -> 4 -> 5:
+      (5)      (1)                            (5)     (1)
+        \      /                                \     /
+           (4)                                    (4)
+    
 
 
