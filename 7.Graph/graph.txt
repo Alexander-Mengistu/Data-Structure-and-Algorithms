@@ -49,6 +49,71 @@ Edges = Edges are drawn or used to connect two nodes of the graph. It can be ord
       (5)      (1)                            (5)     (1)
         \      /                                \     /
            (4)                                    (4)
-    
+
+    5. Connected graph
+    The graph in which from one node we can visit any other node in the graph is known as connected graph
+
+    6. Discounnected graph 
+    At least one node is not reachable from a node is known as a disconnected graph
+
+    7. Regular Graph
+    The graph in which the degree of every vertex is equal to K is called K regular graph.
+
+    8. Complete Graph
+    the graph in which from each node there is an edge to each other node.
+
+    9. Cycle Graph 
+    the graph in which the graph is a cycle in itself, the minimum value of degree of each vertex is 2.
+
+             (3)                   (3)
+           /     \               /  |   \
+         (4)     (2)           (2)------(5)
+           \     /               \  |  /
+             (2)                   (2)
+          2-Regular           Complete Graph
+
+    10. Cyclic Graph
+    The graph in which the graph is a cycle in itself, the minimum value of degree of each vertex is 2.
+
+             (3)                   (3)
+           /     \               /  |   \
+         (4)     (2)           (2)  |   (5)
+           \     /                  |  /
+             (2)                   (2)
+          Cycle Graph           Cyclic Graph
+
+    11. Directed Acyclic Graph
+    A directed graph that does not contain any cycle.
+
+    12. Bipartitle Graph
+    A graph in which vertex can be divided into two sets such that vertexc in each set does not contain any edge between them
+
+    13. . Weighted Graph
+    A graph in which the edges are already specified with suitable weight is known as a weighted graph. 
+    Weighted graphs can be further classified as directed weighted graphs and undirected weighted graphs. 
+
+    Represention of graph data structure
+    Multiple ways can store a graph
+        - Adjacency Matrix
+        - Adjacency List
+
+    - Adjacency Matrix =
+    In this method, the graph is stored in the form of the 2d matrix where rows and columns denote vertices. Each
+    entry in the matrix represents the weigh of the edge between those vertices     
+                                   |0 |1 |2 |3 |
+    (0)---(1)                     0|0 |1 |1 |0 |     
+     |    /                       1|1 |0 |1 |0 | 
+     |   /                        2|1 |1 |0 |1 | 
+     | /                          3|0 |0 |1 |0 | 
+     |/___(3)
+     
+     - Adjacency List
+     This graph is represented as a collection of linked lists. There is an array of pointer whihc points to the edges connected
+     to that vertex.
+    (0)---(1)              |0| --->|1| --->|2|
+     |    /                |1| --->|0| --->|2|          
+     |   /                 |2| --->|0| --->|1| --->|3|       
+     | /                   |3| --->|2| --->       
+     |/___(3)
 
 
