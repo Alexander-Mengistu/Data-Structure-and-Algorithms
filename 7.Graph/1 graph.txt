@@ -107,6 +107,7 @@ Edges = Edges are drawn or used to connect two nodes of the graph. It can be ord
      | /                          3|0 |0 |1 |0 | 
      |/___(3)
      
+     
      - Adjacency List
      This graph is represented as a collection of linked lists. There is an array of pointer whihc points to the edges connected
      to that vertex.
