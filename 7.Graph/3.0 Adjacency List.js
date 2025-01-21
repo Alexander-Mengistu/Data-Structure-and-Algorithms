@@ -3,9 +3,9 @@
 This graph is represented as a collection of linked lists. There is an array of pointer whihc points to the edges connected
 to that vertex.
 (0)---(1)              |0| --->|1| --->|2|
-|    /                |1| --->|0| --->|2|          
-|   /                 |2| --->|0| --->|1| --->|3|       
-| /                   |3| --->|2| --->       
+|    /                 |1| --->|0| --->|2|                <---This is a linked list representation
+|   /                  |2| --->|0| --->|1| --->|3|       
+| /                    |3| --->|2| --->       
 |/___(3)
 
 */

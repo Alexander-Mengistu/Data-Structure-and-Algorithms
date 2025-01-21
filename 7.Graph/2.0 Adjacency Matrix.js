@@ -1,14 +1,18 @@
 /*
 - Adjacency Matrix =
+
+Networks are hard to understand and to perform mathmathical operation, thats why we take them graphs and change the to matrix
+0 means two nodes dont connect, and 1 means node do connect. if 2 point are connected put 1 in they intersection.
+
 In this method, the graph is stored in the form of the 2d matrix where rows and columns denote vertices. Each
-entry in the matrix represents the weigh of the edge between those vertices     
-                               |0 |1 |2 |3 |
-(0)---(1)                     0|0 |1 |1 |0 |     
- |    /                       1|1 |0 |1 |0 | 
- |   /                        2|1 |1 |0 |1 | 
- | /                          3|0 |0 |1 |0 | 
- |/___(3) 
- */
+entry in the matrix represents the weigh of the edge between those vertices   
+                               |A |B |C |D |
+(A)---(B)                     A|0 |1 |1 |0 |     
+ |    /                       B|1 |0 |1 |0 | 
+ |   /                        C|1 |1 |0 |1 | 
+ | /                          D|0 |0 |1 |0 | 
+ |/___(D) 
+ (C)*/
 
  function addEdge(mat, i, j) {
     mat[i][j] = 1; // Graph is 
