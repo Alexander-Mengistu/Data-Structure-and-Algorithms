@@ -118,3 +118,35 @@ Edges = Edges are drawn or used to connect two nodes of the graph. It can be ord
      |/___(3)
 
 
+    Real Life applications of Graph Data Structure?
+      graph data structure is used example in social media for mutal friends utilising nodes and edges.
+
+      used to represent the connections between different places in a transportion netowrk, such as roads and airports.
+
+      Graph also used for neural networks, vertics represents neurons and edges represents the synapses between them.
+
+      Graphs are used for compilers 
+
+      gps that connects locations you visted 
+
+      Graph Data Structure has numerous applications in various fields, including social networks, transportation networks, computer networks, recommendation systems, biology, chemistry, and more.
+
+    Benefits of Graph Data Structure?
+      Linked list, tree, array all these data structures have restrictions on strucutre (linear data has no loops betweeon data structutre and between nodes)
+      in graph you can have "loops between nodes ect"
+
+      can be used to model complex data structure
+
+
+     Frequently asked questions about Graph Data Structure?
+      Graphs can be complex to use or understand
+
+      Graph algorithms can be difficult to design and implemnt corretly and be prone to bugs and errors
+
+      graph data structure can be difficult to visualize and analyze, especially for very large or complex graphs,
+      which can make it challenging to extract meaningful insights from the data
+
+
+
+
+
